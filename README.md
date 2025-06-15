@@ -76,38 +76,17 @@ The dataset `brazilian_cities.csv` contains information about all municipalities
 ## Example Code: Manipulating the Dataset with Pandas
 Here are some examples of how to load and manipulate the dataset using Pandas:
 
-1. **Load the Dataset**
+**Load the Dataset**
    ```python
    import pandas as pd
 
    # Load the dataset
-   df = pd.read_csv('brazilian_cities.csv')
+   df = pd.read_csv('brazilian_cities.csv', encoding='latin-1')
 
    # Display the first few rows
    print(df.head())
    ```
 
-2. **Filter Rows Based on State (UF)**
-   ```python
-   # Filter municipalities in the state of Rio de Janeiro (RJ)
-   rio_janeiro_municipalities = df[df['UF'] == 'RJ']
-   print(rio_janeiro_municipalities)
-   ```
-
-3. **Search for a Specific Municipality**
-   ```python
-   # Search for a municipality by name
-   municipality_name = "Porto Velho"
-   matching_municipalities = df[df['MUNICÍPIO - IBGE'].str.contains(municipality_name, case=False)]
-   print(matching_municipalities)
-   ```
-
-4. **Count Municipalities by State**
-   ```python
-   # Count the number of municipalities in each state
-   municipality_count_by_state = df['UF'].value_counts()
-   print(municipality_count_by_state)
-   ```
 
 ## Acknowledgments
 - **Data Source**: Brazilian government open data portal ([https://dados.gov.br](https://dados.gov.br/dados/conjuntos-dados/tabela-de-rgos-e-municpios)).
