@@ -56,11 +56,11 @@ To run this project, follow these steps:
    pip install -r requirements.txt
    ```
 
-4. **Run the Project**:
-   - First, execute the `llava-v1.5-7b-q4.llamafile.exe` to set up the LLM model.
-   - Then, run the main script:
+4. **Run the Llamafile Server**:
+   - Download the `llava-v1.5-7b-q4.llamafile.exe` from [Mozilla Ocho's llamafile repository](https://github.com/Mozilla-Ocho/llamafile).
+   - Execute the file to start the server on `http://localhost:8080`:
      ```bash
-     python rag_llamafile.py
+     ./llava-v1.5-7b-q4.llamafile.exe
      ```
 
 ## Dataset Description
@@ -110,7 +110,7 @@ Here are some examples of how to load and manipulate the dataset using Pandas:
    ```
 
 ## Acknowledgments
-- **Data Source**: Brazilian government open data portal ([https://dados.gov.br](https://dados.gov.br)).
+- **Data Source**: Brazilian government open data portal ([https://dados.gov.br](https://dados.gov.br/dados/conjuntos-dados/tabela-de-rgos-e-municpios)).
 - **LLM Model**: `llamafile` by Mozilla Ocho ([https://github.com/Mozilla-Ocho/llamafile](https://github.com/Mozilla-Ocho/llamafile)).
 - **Course**: Introduction to Retrieval Augmented Generation (RAG) by Duke University on Coursera.
 
